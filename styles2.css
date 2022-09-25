@@ -1,0 +1,76 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile-img {
+    width: 150px;
+}
+/*
+Challenge:
+1. Give the card div a class (name it "card")
+2. Select the card class and give it a dotted blue border
+3. Add 20 pixels of padding on all sides of the card
+*/
+.card {
+    padding: 20px;
+    display: flex;
+/*
+Challenge:
+Add horizontal space around the flex children.
+Hint: google "justify content"
+*/
+    justify-content: space-around;
+/*
+Challenge:
+Give the card a width of 400px wide and center it.
+*/
+    width: 400px;
+    margin: 0 auto;
+
+/* 
+Challenge:
+Add colors to the card according to the design.
+black - #2b2839 (the text color)
+blue - #ddebf8
+purple - #d8cefe
+*/
+    border-bottom: 5px solid #E63946;
+    background: #F1FAEE;
+    color: #1D3557;
+}
+
+/*
+Challenge:
+Create a utility class for the dotted blue border.
+Give the class to both flexbox children in the HTML.
+*/
+
+/* to add multiple css classes to a single element, add a space
+to the element. for example
+<div class="card italic"> </div> 
+this allows you to have multiple classes within one div. 
+
+then you can create .italic {
+    font-style: italic;
+} 
+
+inside the css file, and it will change the font style of all items
+within the div to italic.
+*/
+
+.dotted {
+    border: 1px dotted navy;
+}
+
+/*
+Challenge:
+Center the text in the <p> and <h4> elements.
+
+Note: you should only add ONE property, as inheritance 
+should take care of applying it to both elements.
+*/
+
+.bio {
+    text-align: center;
+}
